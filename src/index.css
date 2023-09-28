@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --clr-primary: #5437e5;
+        --clr-secondary: #ffcc71;
+        --clr-body: #373737;
+        --clr-body-light: #e7e7e7;
+    }
+    body {
+        font-family: 'Outfit', sans-serif;
+    }
+}

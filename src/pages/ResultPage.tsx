@@ -32,6 +32,14 @@ const ResultPage = () => {
                         {currentQuiz?.quiz?.length}
                     </p>
                     <p className="text-xl">
+                        <span className="font-semibold">Total Anwser:</span>{' '}
+                        {
+                            currentQuiz?.answers.filter(
+                                (item) => item !== undefined
+                            ).length
+                        }
+                    </p>
+                    <p className="text-xl">
                         <span className="font-semibold">Correct Anwser:</span>{' '}
                         {correctAnswers}
                     </p>
